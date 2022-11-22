@@ -1,0 +1,156 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+header {
+  height: auto;
+  background-color: rgb(29, 104, 175);
+}
+.logo img {
+  height: 50px;
+  width: 50px;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  list-style: none;
+  margin-left: 20px;
+}
+.menu a {
+  text-decoration: none;
+  color: rgb(206, 203, 203);
+}
+.menu .active {
+  color: white;
+}
+.menu a:hover {
+  color: white;
+}
+.hw h1,
+.hw h2 {
+  font-weight: 300;
+}
+.hw__colors {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0;
+  align-items: end;
+}
+.hw__colors-block {
+  display: flex;
+}
+.hw__colors-block p {
+  margin-bottom: 5px;
+}
+.hw__colors-mark {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+
+  margin-left: 4px;
+}
+.current {
+  background-color: rgb(238, 238, 238);
+}
+.reviewed {
+  background-color: rgb(97, 194, 97);
+  color: white;
+}
+.under-review {
+  background-color: rgb(72, 175, 219);
+  color: white;
+}
+.overdue {
+  background-color: rgb(251, 157, 172);
+  color: white;
+}
+.tasks {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid rgb(175, 175, 175);
+  padding: 10px 0;
+}
+.tasks__item {
+  padding: 10px;
+}
+.tasks__block {
+  border-radius: 4px;
+  padding: 20px;
+  margin: 0;
+}
+.output-group {
+  border-radius: 4px;
+}
+.output-group a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  white-space: nowrap;
+  padding: 5px;
+}
+.output-group p {
+  margin: 0 0 0 5px;
+}
+.output-group__secondary {
+  border-radius: 0 4px 4px 0;
+}
+.output-group__primary {
+  border-radius: 4px 0 0 4px;
+}
+.tasks__block.reviewed {
+  position: relative;
+}
+.tasks__block span {
+  background-color: rgb(12, 147, 12);
+  padding: 0 10px;
+  font-size: smaller;
+}
+.tasks__block-rating {
+  position: absolute;
+  width: 87%;
+  display: flex;
+  justify-content: end;
+}
+@media screen and (max-width: 500px) {
+  .logo img {
+    height: 30px;
+    width: 30px;
+  }
+  .logo-2 {
+    height: 40px;
+    width: 40px;
+  }
+  .menu li {
+    margin-left: 4px;
+  }
+  .menu a {
+    font-size: 12px;
+  }
+  .hw h1 {
+    font-size: 24px;
+  }
+  .hw h2 {
+    font-size: 20px;
+  }
+  .hw__colors {
+    margin: 4px 0;
+  }
+  .hw__colors-block {
+    display: flex;
+  }
+  .hw__colors-block p {
+    margin-bottom: 4px;
+    font-size: small;
+  }
+  .hw__colors-mark {
+    height: 20px;
+    width: 20px;
+
+    margin-left: 4px;
+  }
+}
