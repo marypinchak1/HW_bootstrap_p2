@@ -9,6 +9,7 @@ header {
   height: 50px;
   width: 50px;
 }
+
 .menu {
   margin: 0;
   padding: 0;
@@ -78,6 +79,9 @@ header {
   border-radius: 4px;
   padding: 20px;
   margin: 0;
+}
+.custom-file-input{
+  opacity: hidden;
 }
 .output-group {
   border-radius: 4px;
